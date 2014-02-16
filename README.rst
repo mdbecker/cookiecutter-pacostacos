@@ -1,8 +1,8 @@
 ======================
-cookiecutter-pypackage
+cookiecutter-pacostacos
 ======================
 
-Cookiecutter template for a Python package. See https://github.com/audreyr/cookiecutter.
+Cookiecutter template for a RESTful web API service for a predictive algorithm. See https://github.com/audreyr/cookiecutter.
 
 * Free software: BSD license
 * Pytest_ runner: Supports `unittest`, `pytest`, `nose` style tests and more
@@ -14,9 +14,9 @@ Cookiecutter template for a Python package. See https://github.com/audreyr/cooki
 Usage
 -----
 
-Generate a Python package project::
+Generate a predictive algorithm REST API::
 
-    cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git
+    cookiecutter https://github.com/mdbecker/cookiecutter-pacostacos.git
 
 Then:
 
@@ -34,8 +34,8 @@ Don't worry, you have options:
 Similar Cookiecutter Templates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* `audreyr/cookiecutter-pypackage`_: The original pypackage, uses unittest
-for testing and other minor changes.
+* `audreyr/cookiecutter-pypackage`_: The original pypackage, uses unittest for testing and other minor changes.
+* `lucuma/cookiecutter-pypackage`_: Full py.test integration: custom .coveragerc file and changes in the Makefile and Travis/Tox config files. Used for several released packages.
 
 Fork This
 ~~~~~~~~~
