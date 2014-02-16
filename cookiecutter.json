@@ -1,11 +1,11 @@
 {
-	"full_name": "Taylor \"Nekroze\" Lawson",
-	"email": "nekroze@eturnilnetwork.com",
-	"github_username": "Nekroze",
-	"project_name": "A Lot of Effort",
-	"repo_name": "alotofeffort",
-	"project_short_description": "Deploy static HTML sites to S3 with the simple 'alotofeffort' command.",
-	"release_date": "2013-07-10",
-	"year": "2013",
-	"version": "0.1.0"
+    "full_name": "Michael Becker",
+    "email": "mike@beckerfuffle.com",
+    "github_username": "mdbecker",
+    "project_name": "Paco's Tacos API",
+    "repo_name": "pacos_tacos_api",
+    "project_short_description": "RESTful web API service for a predictive algorithm",
+    "release_date": "2014-02-16",
+    "year": "2014",
+    "version": "0.0.1"
 }
