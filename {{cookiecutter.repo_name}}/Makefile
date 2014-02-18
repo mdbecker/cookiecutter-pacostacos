@@ -37,16 +37,16 @@ clean-pyc:
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 
-lint: .req
+lint: req
 	$(FLAKE8) {{ cookiecutter.repo_name }} test
 
-test: .req
+test: req
 	$(PYTEST) --ignore $(ENVDIR)
 
-test-all: .req
+test-all: req
 	$(TOX)
 
-coverage: .req
+coverage: req
 	$(COVERAGE) run --source {{ cookiecutter.repo_name }} setup.py test
 	$(COVERAGE) report -m
 	$(COVERAGE) html
@@ -81,3 +81,6 @@ req: .req
 .req: $(ENVDIR) requirements.txt
 	$(PIP) install -r requirements.txt
 	@touch .req
+
+app: req
+	$(PYTHON) {{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name }}.py
