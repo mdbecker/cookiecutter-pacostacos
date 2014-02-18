@@ -3,7 +3,8 @@
     "email": "mike@beckerfuffle.com",
     "github_username": "mdbecker",
     "project_name": "Paco's Tacos API",
-    "repo_name": "pacos_tacos_api",
+    "repo_name": "test_api",
+    "class_name": "TestApi"
     "project_short_description": "RESTful web API service for a predictive algorithm",
     "release_date": "2014-02-16",
     "year": "2014",
