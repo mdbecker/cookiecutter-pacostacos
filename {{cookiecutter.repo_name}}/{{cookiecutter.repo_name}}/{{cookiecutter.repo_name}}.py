@@ -5,12 +5,21 @@ from flask.ext.restful import Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
+
 # Initilize your estimator here.
 class DummyEstimator(object):
     """Dummy estimator that just reverses the input."""
     def predict(self, input_):
         return input_[::-1]
 estimator = DummyEstimator()
+
+
+# Initilize your label_encoder here (if you have one).
+class DummyLabelEncoder(object):
+    """Dummy label encoder that does nothing."""
+    def inverse_transform(self, input_):
+        return input_
+label_encoder = DummyLabelEncoder()
 
 
 class {{ cookiecutter.class_name }}(Resource):
@@ -20,7 +29,7 @@ class {{ cookiecutter.class_name }}(Resource):
     def put(self):
         """PUT method that accepts input and returns a prediction.
 
-        Accepting input in urlencoded format.
+        Accepts input in urlencoded format.
 
         Example request/response looks like:
         $ curl http://localhost:5000/ -d "data=testing 123" -X PUT
@@ -30,7 +39,8 @@ class {{ cookiecutter.class_name }}(Resource):
 
         """
         data = request.form['data']
-        return {'result': estimator.predict(data)}
+        return {
+            'result': label_encoder.inverse_transform(estimator.predict(data))}
 
     def post(self):
         """POST method that duplicates the PUT method."""
