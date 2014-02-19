@@ -1,6 +1,4 @@
-  -------------------------
-  cookiecutter-pacostacos
-  -------------------------
+# cookiecutter-pacostacos
 
 Cookiecutter template for a RESTful web API service for a predictive
 algorithm. See <https://github.com/audreyr/cookiecutter>.
@@ -15,9 +13,10 @@ algorithm. See <https://github.com/audreyr/cookiecutter>.
     example, [ReadTheDocs](https://readthedocs.org/)
 -   [Wheel](http://pythonwheels.com) support: Use the newest python package distribution
     standard from the get go
+-   Uses [Flask-RESTful](http://flask-restful.readthedocs.org/en/latest/) to implement a REST
+    API.
 
-Usage
-=====
+## Usage
 
 Generate a predictive algorithm REST API:
 
@@ -39,27 +38,23 @@ curl http://localhost:5000/ -d "data=testing 123" -X PUT
 }
 ```
 
-Not Exactly What You Want?
-==========================
+## Not Exactly What You Want?
 
 Don't worry, you have options:
 
-Similar Cookiecutter Templates
-------------------------------
+### Similar Cookiecutter Templates
 
 -   [audreyr/cookiecutter-pypackage](https://github.com/Nekroze/cookiecutter-pypackage): The original pypackage, uses
     unittest for testing and other minor changes.
 
-Fork This
----------
+### Fork This
 
 If you have differences in your preferred setup, I encourage you to fork
 this to create your own version. Once you have your fork working, add it
 to the Similar Cookiecutter Templates list with a brief explanation.
 It's up to you whether or not to rename your fork.
 
-Or Submit a Pull Request
-------------------------
+### Or Submit a Pull Request
 
 I also accept pull requests on this, if they're small, atomic, and if
 they make my own packaging experience better.
